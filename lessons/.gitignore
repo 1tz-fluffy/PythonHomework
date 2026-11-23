@@ -1,9 +1,0 @@
-pycache/
-*.pyc
-venv/
-.venv/
-.env
-.idea/
-.vscode/
-Thumbs.db
-Desktop.ini
