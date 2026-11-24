@@ -3,8 +3,5 @@ def fib1(n):
         return 1
     return fib1(n - 1) + fib1(n - 2)
 
-print(fib1(1))
-print(fib1(2))
-print(fib1(3))
-print(fib1(4))
-print(fib1(5))
+b = int(input())
+print(fib1(b))
