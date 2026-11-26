@@ -1,10 +1,13 @@
-def RootK(X, K, N):
-    if N == 0:
+def RootK(x, k, n):
+    if n == 0:
         return 1
-    a = RootK(X, K, N - 1)
-    return a - (a - X / (a ** (K - 1))) / K
+    a = RootK(x, k, n - 1)
+    return a - (a - x / (a ** (k - 1))) / k
 
+print(RootK(8, 3, 1))
 print(RootK(8, 3, 2))
-print(RootK(16, 2, 4))
-print(RootK(81, 4, 3))
-print(RootK(25, 2, 5))
+print(RootK(8, 3, 3))
+print(RootK(8, 3, 4))
+print(RootK(8, 3, 5))
+print(RootK(8, 3, 6))
+print(RootK(8, 3, 7))
